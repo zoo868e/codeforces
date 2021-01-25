@@ -45,7 +45,9 @@ void solve()
 		}
 	}
 	*/
-	if(n%2)printf("YES\n");
+	lli temp = n;
+	while((temp % 2) == 0)temp/=2;
+	if(temp != 1)printf("YES\n");
 	else printf("NO\n");
 }
 
